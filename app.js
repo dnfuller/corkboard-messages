@@ -1,12 +1,13 @@
+var word = $(".word");
 var resetBtn = $("#reset");
 
-$(".word").draggable();
+word.draggable();
 
 resetBtn.click(function () {
   // Reset position
-  $(".word").removeAttr('style');
+  word.removeAttr('style');
 
   // Destroy original draggable and create new one
-  $(".word").draggable("destroy");
-  $(".word").draggable();
+  word.draggable("destroy");
+  word.draggable();
 });
